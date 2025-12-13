@@ -1,0 +1,66 @@
+# ApertoDNS Status Page Configuration
+# Powered by Upptime - https://upptime.js.org
+
+owner: 1r0n3d3v3l0per
+repo: apertodns-status
+
+# Sites to monitor
+sites:
+  - name: ApertoDNS Website
+    url: https://www.apertodns.com
+    icon: https://www.apertodns.com/favicon.ico
+    
+  - name: ApertoDNS API
+    url: https://www.apertodns.com/api/health
+    expectedStatusCodes:
+      - 200
+      
+  - name: ApertoDNS Dashboard
+    url: https://www.apertodns.com/login
+    
+  - name: DNS Resolution
+    url: $DNS_CHECK
+    check: "tcp-ping"
+    __dangerous__disable_verify_peer: true
+
+# Status page configuration
+status-website:
+  cname: status.apertodns.com
+  baseUrl: /
+  logoUrl: https://www.apertodns.com/favicon.ico
+  name: ApertoDNS Status
+  introTitle: "**ApertoDNS** is currently operational"
+  introMessage: This is the official status page for ApertoDNS Dynamic DNS Service. We monitor all critical services and update this page automatically every 5 minutes.
+  navbar:
+    - title: Status
+      href: /
+    - title: ApertoDNS
+      href: https://www.apertodns.com
+    - title: Documentation
+      href: https://www.apertodns.com/docs
+
+# Customize theme
+theme: light
+
+# Branding
+i18n:
+  activeIncidents: Active Incidents
+  allSystemsOperational: All Systems Operational
+  incidentReport: Incident Report for {0}
+  pastIncidents: Past Incidents
+  scheduledMaintenance: Scheduled Maintenance
+  overallUptime: Overall Uptime
+  
+# Commits settings  
+commitMessages:
+  statusChange: "$EMOJI $SITE is $STATUS"
+  graphsUpdate: "Update response time graphs"
+  commitAuthorName: "Upptime Bot"
+  commitAuthorEmail: "upptime@apertodns.com"
+  
+# Check frequency (every 5 minutes)
+workflowSchedule:
+  uptime: "*/5 * * * *"
+  graphs: "0 * * * *"
+  staticSite: "0 * * * *"
+  summary: "0 0 * * *"
