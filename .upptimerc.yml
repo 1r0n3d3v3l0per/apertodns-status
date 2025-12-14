@@ -8,7 +8,7 @@ repo: apertodns-status
 sites:
   - name: ApertoDNS Website
     url: https://www.apertodns.com
-    icon: https://www.apertodns.com/favicon.ico
+    icon: https://developingweb.com/apple-touch-icon.png
     
   - name: ApertoDNS API
     url: https://www.apertodns.com/api/health
@@ -22,7 +22,7 @@ sites:
 status-website:
   cname: status.apertodns.com
   baseUrl: /
-  logoUrl: https://www.apertodns.com/favicon.ico
+  logoUrl: https://developingweb.com/apple-touch-icon.png
   name: ApertoDNS Status
   introTitle: "**ApertoDNS** is currently operational"
   introMessage: This is the official status page for ApertoDNS Dynamic DNS Service. We monitor all critical services and update this page automatically every 5 minutes.
