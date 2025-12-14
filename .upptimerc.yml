@@ -17,11 +17,6 @@ sites:
       
   - name: ApertoDNS Dashboard
     url: https://www.apertodns.com/login
-    
-  - name: DNS Resolution
-    url: $DNS_CHECK
-    check: "tcp-ping"
-    __dangerous__disable_verify_peer: true
 
 # Status page configuration
 status-website:
