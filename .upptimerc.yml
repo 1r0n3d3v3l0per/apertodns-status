@@ -35,10 +35,10 @@ status-website:
       href: https://www.apertodns.com/docs
   favicon: https://developingweb.com/apple-touch-icon.png
 
-# Modern theme configuration
-theme: light
+# Dark theme to match ApertoDNS Dashboard
+theme: dark
 
-# Custom CSS for brand consistency
+# Custom CSS for brand consistency - Dark theme matching dashboard
 customHeadHtml: |
   <style>
     :root {
@@ -47,163 +47,243 @@ customHeadHtml: |
       --success-color: #10b981;
       --warning-color: #f59e0b;
       --error-color: #ef4444;
-      --bg-color: #f8fafc;
-      --card-bg: #ffffff;
-      --text-primary: #1e293b;
-      --text-secondary: #64748b;
-      --border-color: #e2e8f0;
+      --bg-primary: #000000;
+      --bg-secondary: #111111;
+      --bg-card: #18181b;
+      --text-primary: #ffffff;
+      --text-secondary: #a1a1aa;
+      --border-color: #27272a;
+    }
+    
+    * {
+      box-sizing: border-box;
     }
     
     body {
       font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      background: #000000 !important;
+      color: #ffffff !important;
       min-height: 100vh;
     }
     
-    /* Modern header */
-    header, .navbar {
-      background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%) !important;
-      border-bottom: 1px solid rgba(59, 130, 246, 0.3);
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    /* Header/Navbar - Dark glass effect */
+    header, .navbar, nav {
+      background: rgba(0, 0, 0, 0.9) !important;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #27272a !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     }
     
-    header a, .navbar a {
-      color: #f8fafc !important;
-      font-weight: 500;
-      transition: color 0.2s ease;
+    header *, .navbar *, nav * {
+      color: #ffffff !important;
     }
     
-    header a:hover, .navbar a:hover {
+    header a:hover, .navbar a:hover, nav a:hover {
       color: #3b82f6 !important;
     }
     
-    /* Status cards */
-    .site-card, .monitor, article {
-      background: #ffffff;
-      border-radius: 12px;
-      border: 1px solid #e2e8f0;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-      transition: all 0.3s ease;
-      overflow: hidden;
+    /* Main container */
+    main, .container, .content {
+      background: #000000 !important;
     }
     
-    .site-card:hover, .monitor:hover, article:hover {
-      box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.15);
-      border-color: #3b82f6;
+    /* Status cards - Dark glass cards */
+    .site-card, .monitor, article, .card, section {
+      background: #18181b !important;
+      border-radius: 16px !important;
+      border: 1px solid #27272a !important;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4) !important;
+      transition: all 0.3s ease !important;
+      overflow: hidden;
+      margin-bottom: 16px !important;
+    }
+    
+    .site-card:hover, .monitor:hover, article:hover, .card:hover {
+      border-color: #3b82f6 !important;
+      box-shadow: 0 0 30px rgba(59, 130, 246, 0.2) !important;
       transform: translateY(-2px);
     }
     
-    /* Status badges */
-    .status-up, .operational, [class*="up"], .badge-success {
-      background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
-      color: white !important;
-      border-radius: 20px;
-      padding: 4px 12px;
-      font-weight: 600;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
+    /* All text white */
+    h1, h2, h3, h4, h5, h6, p, span, div, a, li {
+      color: #ffffff !important;
     }
     
-    .status-down, .degraded, [class*="down"], .badge-danger {
+    /* Secondary text */
+    .text-muted, .text-secondary, small, .description {
+      color: #a1a1aa !important;
+    }
+    
+    /* Status badges - Operational */
+    .status-up, .operational, [class*="up"], .badge-success, .success {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+      color: white !important;
+      border-radius: 9999px !important;
+      padding: 6px 16px !important;
+      font-weight: 600 !important;
+      font-size: 0.85rem !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.5px !important;
+      box-shadow: 0 0 20px rgba(16, 185, 129, 0.3) !important;
+    }
+    
+    /* Status badges - Down */
+    .status-down, .degraded, [class*="down"], .badge-danger, .danger, .error {
       background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
       color: white !important;
-      border-radius: 20px;
-      padding: 4px 12px;
-      font-weight: 600;
+      border-radius: 9999px !important;
+      padding: 6px 16px !important;
+      font-weight: 600 !important;
+      box-shadow: 0 0 20px rgba(239, 68, 68, 0.3) !important;
     }
     
     /* All systems operational banner */
-    .all-ok, .all-systems-go {
+    .all-ok, .all-systems-go, .status-all-ok {
       background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
       color: white !important;
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin-bottom: 24px;
-      box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+      border-radius: 16px !important;
+      padding: 24px !important;
+      text-align: center !important;
+      font-size: 1.25rem !important;
+      font-weight: 600 !important;
+      margin-bottom: 32px !important;
+      box-shadow: 0 0 40px rgba(16, 185, 129, 0.3) !important;
+      border: none !important;
     }
     
-    /* Uptime percentage */
+    /* Uptime percentage - Glowing green */
     .uptime, .percentage {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #10b981;
+      font-size: 2rem !important;
+      font-weight: 700 !important;
+      color: #10b981 !important;
+      text-shadow: 0 0 20px rgba(16, 185, 129, 0.5);
     }
     
     /* Response time */
-    .response-time {
-      color: #64748b;
-      font-size: 0.9rem;
+    .response-time, .time {
+      color: #a1a1aa !important;
+      font-size: 0.9rem !important;
     }
     
-    /* Charts */
-    .chart-container {
-      background: #ffffff;
-      border-radius: 12px;
-      padding: 20px;
-      border: 1px solid #e2e8f0;
+    /* Charts container */
+    .chart-container, .graph, svg {
+      background: #18181b !important;
+      border-radius: 12px !important;
+      padding: 20px !important;
+      border: 1px solid #27272a !important;
     }
     
-    /* Timeline/history */
-    .timeline, .history {
-      background: #f8fafc;
-      border-radius: 8px;
-      padding: 16px;
-    }
-    
-    /* Buttons */
-    button, .btn {
-      background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-      color: white;
-      border: none;
-      border-radius: 8px;
-      padding: 10px 20px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-    
-    button:hover, .btn:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
-    }
-    
-    /* Footer */
-    footer {
-      background: #0f172a;
-      color: #94a3b8;
-      padding: 24px;
-      margin-top: 48px;
-    }
-    
-    footer a {
-      color: #3b82f6;
-    }
-    
-    /* Headings */
-    h1, h2, h3 {
-      color: #1e293b;
-      font-weight: 700;
+    /* Timeline/history bars */
+    .timeline, .history, .uptime-bar {
+      background: #27272a !important;
+      border-radius: 8px !important;
     }
     
     /* Links */
     a {
-      color: #3b82f6;
-      text-decoration: none;
-      transition: color 0.2s ease;
+      color: #3b82f6 !important;
+      text-decoration: none !important;
+      transition: all 0.2s ease !important;
     }
     
     a:hover {
-      color: #2563eb;
+      color: #60a5fa !important;
+      text-decoration: none !important;
     }
     
-    /* Responsive improvements */
+    /* Buttons - Blue gradient */
+    button, .btn, input[type="submit"] {
+      background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
+      color: white !important;
+      border: none !important;
+      border-radius: 12px !important;
+      padding: 12px 24px !important;
+      font-weight: 600 !important;
+      cursor: pointer !important;
+      transition: all 0.2s ease !important;
+    }
+    
+    button:hover, .btn:hover {
+      transform: translateY(-2px) !important;
+      box-shadow: 0 0 30px rgba(59, 130, 246, 0.4) !important;
+    }
+    
+    /* Footer - Dark */
+    footer {
+      background: #000000 !important;
+      color: #a1a1aa !important;
+      padding: 32px !important;
+      margin-top: 48px !important;
+      border-top: 1px solid #27272a !important;
+    }
+    
+    footer a {
+      color: #3b82f6 !important;
+    }
+    
+    /* Inputs */
+    input, select, textarea {
+      background: #27272a !important;
+      border: 1px solid #3f3f46 !important;
+      color: #ffffff !important;
+      border-radius: 8px !important;
+      padding: 12px !important;
+    }
+    
+    input:focus, select:focus, textarea:focus {
+      border-color: #3b82f6 !important;
+      outline: none !important;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2) !important;
+    }
+    
+    /* Tables */
+    table {
+      background: #18181b !important;
+      border-radius: 12px !important;
+      overflow: hidden !important;
+    }
+    
+    th {
+      background: #27272a !important;
+      color: #ffffff !important;
+    }
+    
+    td {
+      border-color: #27272a !important;
+      color: #ffffff !important;
+    }
+    
+    tr:hover {
+      background: #27272a !important;
+    }
+    
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #18181b;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: #3f3f46;
+      border-radius: 4px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: #52525b;
+    }
+    
+    /* Responsive */
     @media (max-width: 768px) {
-      .site-card, .monitor {
-        margin: 12px 0;
+      .site-card, .monitor, article {
+        margin: 12px 8px !important;
+      }
+      
+      .uptime, .percentage {
+        font-size: 1.5rem !important;
       }
     }
   </style>
