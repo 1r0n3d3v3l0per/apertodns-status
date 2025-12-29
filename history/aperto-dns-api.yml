@@ -1,7 +1,7 @@
 url: https://www.apertodns.com/api/health
-status: down
-code: 502
-responseTime: 98
-lastUpdated: 2025-12-29T20:40:17.075Z
+status: up
+code: 200
+responseTime: 187
+lastUpdated: 2025-12-29T20:40:34.578Z
 startTime: 2025-12-14T13:01:04.554Z
 generator: Upptime <https://github.com/upptime/upptime>
