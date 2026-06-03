@@ -6,47 +6,7 @@
     "slug": "aperto-dns-website",
     "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "99.30%",
-    "uptimeWeek": "99.90%",
-    "uptimeMonth": "99.98%",
-    "uptimeYear": "100.00%",
-    "time": 0,
-    "timeDay": 0,
-    "timeWeek": 0,
-    "timeMonth": 0,
-    "timeYear": 0,
-    "dailyMinutesDown": {
-      "2026-06-03": 10
-    }
-  },
-  {
-    "name": "ApertoDNS API",
-    "url": "https://www.apertodns.com/api/health",
-    "icon": "https://icons.duckduckgo.com/ip3/www.apertodns.com.ico",
-    "slug": "aperto-dns-api",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.64%",
-    "uptimeWeek": "99.95%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "100.00%",
-    "time": 0,
-    "timeDay": 0,
-    "timeWeek": 0,
-    "timeMonth": 0,
-    "timeYear": 0,
-    "dailyMinutesDown": {
-      "2026-06-03": 5
-    }
-  },
-  {
-    "name": "ApertoDNS Dashboard",
-    "url": "https://www.apertodns.com/login",
-    "icon": "https://icons.duckduckgo.com/ip3/www.apertodns.com.ico",
-    "slug": "aperto-dns-dashboard",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.97%",
+    "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
@@ -55,8 +15,42 @@
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
-    "dailyMinutesDown": {
-      "2026-06-03": 0
-    }
+    "dailyMinutesDown": {}
+  },
+  {
+    "name": "ApertoDNS API",
+    "url": "https://www.apertodns.com/api/health",
+    "icon": "https://icons.duckduckgo.com/ip3/www.apertodns.com.ico",
+    "slug": "aperto-dns-api",
+    "status": "down",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {}
+  },
+  {
+    "name": "ApertoDNS Dashboard",
+    "url": "https://www.apertodns.com/login",
+    "icon": "https://icons.duckduckgo.com/ip3/www.apertodns.com.ico",
+    "slug": "aperto-dns-dashboard",
+    "status": "down",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {}
   }
 ]
