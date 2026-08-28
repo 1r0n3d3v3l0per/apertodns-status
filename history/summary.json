@@ -4,19 +4,19 @@
     "url": "https://www.apertodns.com",
     "icon": "https://developingweb.com/apple-touch-icon.png",
     "slug": "aperto-dns-website",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.96%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "up",
+    "uptime": "99.85%",
+    "uptimeDay": "62.55%",
+    "uptimeWeek": "94.65%",
+    "uptimeMonth": "98.77%",
+    "uptimeYear": "99.85%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-08-28": 1
+      "2026-08-28": 539
     }
   },
   {
@@ -24,19 +24,19 @@
     "url": "https://www.apertodns.com/api/health",
     "icon": "https://icons.duckduckgo.com/ip3/www.apertodns.com.ico",
     "slug": "aperto-dns-api",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.98%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "up",
+    "uptime": "99.85%",
+    "uptimeDay": "62.56%",
+    "uptimeWeek": "94.65%",
+    "uptimeMonth": "98.77%",
+    "uptimeYear": "99.85%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-08-28": 0
+      "2026-08-28": 539
     }
   },
   {
@@ -44,19 +44,19 @@
     "url": "https://www.apertodns.com/login",
     "icon": "https://icons.duckduckgo.com/ip3/www.apertodns.com.ico",
     "slug": "aperto-dns-dashboard",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "up",
+    "uptime": "99.85%",
+    "uptimeDay": "62.57%",
+    "uptimeWeek": "94.65%",
+    "uptimeMonth": "98.77%",
+    "uptimeYear": "99.85%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-08-28": 0
+      "2026-08-28": 539
     }
   }
 ]
