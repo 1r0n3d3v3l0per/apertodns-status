@@ -4,10 +4,10 @@
     "url": "https://www.apertodns.com",
     "icon": "https://developingweb.com/apple-touch-icon.png",
     "slug": "aperto-dns-website",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
+    "uptimeDay": "99.96%",
+    "uptimeWeek": "99.99%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 0,
@@ -15,16 +15,18 @@
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-08-28": 1
+    }
   },
   {
     "name": "ApertoDNS API",
     "url": "https://www.apertodns.com/api/health",
     "icon": "https://icons.duckduckgo.com/ip3/www.apertodns.com.ico",
     "slug": "aperto-dns-api",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.98%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
@@ -33,16 +35,18 @@
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-08-28": 0
+    }
   },
   {
     "name": "ApertoDNS Dashboard",
     "url": "https://www.apertodns.com/login",
     "icon": "https://icons.duckduckgo.com/ip3/www.apertodns.com.ico",
     "slug": "aperto-dns-dashboard",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
@@ -51,6 +55,8 @@
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-08-28": 0
+    }
   }
 ]
