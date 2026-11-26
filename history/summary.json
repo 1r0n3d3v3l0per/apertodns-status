@@ -4,10 +4,10 @@
     "url": "https://www.apertodns.com",
     "icon": "https://developingweb.com/apple-touch-icon.png",
     "slug": "aperto-dns-website",
-    "status": "up",
+    "status": "down",
     "uptime": "99.89%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
+    "uptimeDay": "99.96%",
+    "uptimeWeek": "99.99%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.89%",
     "time": 0,
@@ -16,7 +16,8 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-08-28": 539
+      "2026-08-28": 539,
+      "2026-11-26": 1
     }
   },
   {
@@ -24,9 +25,9 @@
     "url": "https://www.apertodns.com/api/health",
     "icon": "https://icons.duckduckgo.com/ip3/www.apertodns.com.ico",
     "slug": "aperto-dns-api",
-    "status": "up",
+    "status": "down",
     "uptime": "99.89%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.98%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.89%",
@@ -36,7 +37,8 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-08-28": 539
+      "2026-08-28": 539,
+      "2026-11-26": 0
     }
   },
   {
@@ -44,9 +46,9 @@
     "url": "https://www.apertodns.com/login",
     "icon": "https://icons.duckduckgo.com/ip3/www.apertodns.com.ico",
     "slug": "aperto-dns-dashboard",
-    "status": "up",
+    "status": "down",
     "uptime": "99.89%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.89%",
@@ -56,7 +58,8 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-08-28": 539
+      "2026-08-28": 539,
+      "2026-11-26": 0
     }
   }
 ]
