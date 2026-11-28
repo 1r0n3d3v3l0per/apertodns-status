@@ -5,11 +5,11 @@
     "icon": "https://developingweb.com/apple-touch-icon.png",
     "slug": "aperto-dns-website",
     "status": "down",
-    "uptime": "99.79%",
-    "uptimeDay": "64.10%",
-    "uptimeWeek": "94.87%",
-    "uptimeMonth": "98.82%",
-    "uptimeYear": "99.79%",
+    "uptime": "99.51%",
+    "uptimeDay": "0.00%",
+    "uptimeWeek": "80.77%",
+    "uptimeMonth": "95.58%",
+    "uptimeYear": "99.51%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
@@ -17,7 +17,8 @@
     "timeYear": 0,
     "dailyMinutesDown": {
       "2026-08-28": 539,
-      "2026-11-27": 367,
+      "2026-11-28": 348,
+      "2026-11-27": 1440,
       "2026-11-26": 150
     }
   },
@@ -27,11 +28,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/www.apertodns.com.ico",
     "slug": "aperto-dns-api",
     "status": "down",
-    "uptime": "99.79%",
-    "uptimeDay": "64.12%",
-    "uptimeWeek": "94.87%",
-    "uptimeMonth": "98.82%",
-    "uptimeYear": "99.79%",
+    "uptime": "99.51%",
+    "uptimeDay": "0.00%",
+    "uptimeWeek": "80.78%",
+    "uptimeMonth": "95.58%",
+    "uptimeYear": "99.51%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
@@ -39,7 +40,8 @@
     "timeYear": 0,
     "dailyMinutesDown": {
       "2026-08-28": 539,
-      "2026-11-27": 367,
+      "2026-11-28": 348,
+      "2026-11-27": 1440,
       "2026-11-26": 150
     }
   },
@@ -49,11 +51,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/www.apertodns.com.ico",
     "slug": "aperto-dns-dashboard",
     "status": "down",
-    "uptime": "99.79%",
-    "uptimeDay": "64.13%",
-    "uptimeWeek": "94.88%",
-    "uptimeMonth": "98.82%",
-    "uptimeYear": "99.79%",
+    "uptime": "99.51%",
+    "uptimeDay": "0.00%",
+    "uptimeWeek": "80.78%",
+    "uptimeMonth": "95.58%",
+    "uptimeYear": "99.51%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
@@ -61,7 +63,8 @@
     "timeYear": 0,
     "dailyMinutesDown": {
       "2026-08-28": 539,
-      "2026-11-27": 367,
+      "2026-11-28": 348,
+      "2026-11-27": 1440,
       "2026-11-26": 149
     }
   }
